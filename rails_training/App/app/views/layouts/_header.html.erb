@@ -1,0 +1,4 @@
+<% c = Category.all %>
+<% c.each do |c| %>
+<%= link_to c.name , "/products/#{c.id}" %> ||
+<% end %>
